@@ -1,5 +1,5 @@
 do
---create by RoyalTeam ID CHANNEL : @RoyalTeamCh
+--create by RoyalTeam ID CHANNEL : @RoyalTeamCh >>>>>>tnx to @@Mehrpouya
 local function get_message_callback(extra, success, result)
   if result.to.peer_type == 'channel' then
     if our_id == result.from.peer_id then
@@ -21,9 +21,9 @@ local function run(msg, matches)
     msgr = get_message(msg.reply_id,get_message_callback, get_receiver(msg))
   end
 end
---create by RoyalTeam ID CHANNEL : @RoyalTeamCh
+--create by RoyalTeam ID CHANNEL : @RoyalTeamCh >>>>tnx to @Mehrpouya
 return {
-   description = "kick by reply.",
+   description = "del-msg by reply.",
    usage = {
    },
    patterns = {
