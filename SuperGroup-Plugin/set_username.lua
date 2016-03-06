@@ -7,7 +7,7 @@ local function run(msg, matches)
   local chat = 'channel#id'..msg.to.id
   
   if msg.to.type == 'channel' then
-    print('addabout '..chat..' to '..text)
+    print('setusername >> '..chat..' to '..username)
     channel_set_username(chat, username, ok_cb, false)
     return 'username \n@'..username..'\nsaved'
   else
@@ -16,8 +16,8 @@ local function run(msg, matches)
 end
 --create by RoyalTeam ID CHANNEL : @RoyalTeamCh
 return {
-  description = "set channel topic",
-  usage = "!topic [whatever]: set channel topic",
+  description = "set channel username",
+  usage = "----------",
   patterns = {
     "^[!/#]setusername +(.+)$"
   }, 
